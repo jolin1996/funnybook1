@@ -1,0 +1,23 @@
+<template name="vol-rfu">
+  <view class="vol-card">
+    <view class="rfu-title">
+      <text>为你推荐</text>
+    </view>
+    <view class="rfu-intro">
+      <text>根据你的阅读数据计算，每日更新</text>
+    </view>
+
+    <view class="rfu-item">
+      <image class="rfu-image" src="{{ item[0].hp_img_url }}" mode="aspectFill" />
+      <image class="rfu-image" src="{{ item[1].hp_img_url }}" mode="aspectFill" />
+      <image class="rfu-image" src="{{ item[2].hp_img_url }}" mode="aspectFill" />
+      <image class="rfu-image" src="{{ item[3].hp_img_url }}" mode="aspectFill" />
+    </view>
+
+    <view class="rfu-change">
+      <text>换一批</text>
+    </view>
+
+
+  </view>
+</template>

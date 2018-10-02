@@ -1,0 +1,48 @@
+.rec1-title {
+  font-size: 44rpx;
+}
+
+.rec1-subtitle {
+  font-size: 32rpx;
+  color: #999;
+  margin-top: 2rpx;
+  margin-bottom: 20rpx;
+}
+
+.rec1-book-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rec1-book-info {
+  width: 180rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.rec1-book-cover {
+  width: 180rpx;
+  height: 240rpx;
+  margin-top: 15rpx;
+}
+
+.rec1-book-title {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.rec1-book-icon {
+  margin-top: 15rpx;
+  margin-bottom: 20rpx;
+  background-color: #37a2da;
+  border-radius: 20rpx;
+  padding: 10rpx 25rpx 10rpx 25rpx;
+  font-size: 28rpx;
+  color: #fff;
+}

@@ -1,0 +1,27 @@
+<view class="container">
+  <swiper class="swiper">
+    <!--推荐页面1-lsj-->
+    <swiper-item class="swiper-item">
+      <import src="templates/rec1.wxml" />
+      <template is="vol-rec1" data="{{...rec1Data}}" />
+    </swiper-item>
+
+    <!--好友在读-tyc-->
+    <swiper-item class="swiper-item">
+      <import src="templates/friends.wxml" />
+      <template is="vol-friend" data="{{item: vols}}" />
+    </swiper-item>
+    <!--为你推荐-tyc-->
+    <swiper-item class="swiper-item">
+      <import src="templates/recommendforu.wxml" />
+      <template is="vol-rfu" data="{{item: vols}}" />
+    </swiper-item>
+    <!--推荐页面-tyc-->
+    <block wx:for="{{vols}}" wx:for-index="idx" wx:key="{{hpcontent_id}}">
+      <swiper-item class="swiper-item">
+        <import src="templates/volItem.wxml" />
+        <template is="vol-item" data="{{item: item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

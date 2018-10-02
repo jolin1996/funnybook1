@@ -1,0 +1,86 @@
+{
+    "pages": [
+        "pages/board/board",
+        "pages/my/my",
+        "pages/kid/kid",
+        "pages/reportSelect/reportSelect",
+        "pages/report/report",
+        "pages/recommend/recommend",
+        "pages/popular/popular",
+        "pages/coming/coming",
+        "pages/top/top",
+        "pages/search/search",
+        "pages/filmDetail/filmDetail",
+        "pages/personDetail/personDetail",
+        "pages/searchResult/searchResult",
+        "pages/favorite/favorite",
+        "pages/history/history",
+        "pages/shake/shake",
+        "pages/gallery/gallery",
+        "pages/setting/setting",
+        "pages/skin/skin",
+        "pages/personInfo/personInfo",
+        "pages/editPersonInfo/editPersonInfo",
+        "pages/systemInfo/systemInfo",
+        "pages/about/about",
+        "pages/location/location",
+        "pages/index/index",
+        "pages/chat/chat",
+        "pages/medal/medal",
+        "pages/score/score",
+        "children/logs/logs",
+        "children/edit/edit",
+        "pages/dbTest/dbTest"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#40586d",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "电影推荐",
+        "backgroundColor": "#fff",
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#686868",
+        "selectedColor": "#40586d",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/recommend/recommend",
+                "iconPath": "dist/images/popular_icon.png",
+                "selectedIconPath": "dist/images/popular_active_icon.png",
+                "text": "推荐"
+            },
+            {
+                "pagePath": "pages/board/board",
+                "iconPath": "dist/images/coming_icon.png",
+                "selectedIconPath": "dist/images/coming_active_icon.png",
+                "text": "书库"
+            },
+            {
+                "pagePath": "pages/reportSelect/reportSelect",
+                "iconPath": "dist/images/top_icon.png",
+                "selectedIconPath": "dist/images/top_active_icon.png",
+                "text": "分析"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "dist/images/my_icon.png",
+                "selectedIconPath": "dist/images/my_active_icon.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "plugins": {
+        "WechatSI": {
+            "version": "0.1.0",
+            "provider": "wx069ba97219f66d99"
+        }
+    },
+    "debug": true
+}

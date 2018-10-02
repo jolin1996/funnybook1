@@ -1,0 +1,1 @@
+<canvas wx:if="{{isShow}}" canvas-id='canvas' class="canvas" style="height:{{canvasHeight}}rpx;width:{{canvasWidth}}rpx;"></canvas>

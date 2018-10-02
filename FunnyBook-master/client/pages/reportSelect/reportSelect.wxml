@@ -1,0 +1,18 @@
+<import src="../../component/nullTip/nullTip.wxml" />
+
+<view class="kids-list">
+  <block wx:if="{{kids.length == 0}}">
+    <template is="nullTip" data="{{nullTip: nullTip}}" />
+  </block>
+  <block wx:else>
+    <block wx:for="{{kids}}" wx:for-item="kid" wx:for-index="kidIndex" wx:key="kidID">
+      <view class="kid-info" data-id="{{kid.kidID}}" bindtap="viewReport">
+        <image class="kid-picture" src="{{kid.picture}}"></image>
+        <view class="kid-txt">
+          <view class="kid-name">{{kid.name}} {{kid.sex == 0 ? "♀" : "♂"}}</view>
+          <view class="kid-age">{{kid.age}}岁</view>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>

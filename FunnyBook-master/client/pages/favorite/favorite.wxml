@@ -1,0 +1,69 @@
+<import src="../../component/nullTip/nullTip.wxml"/>
+<view class="tab-header" catchtouchmove='ture'>
+    <view class="tab-header-item {{show == 'film_favorite' ? 'tab-header-active' : ''}}" data-type="film_favorite" bindtap="changeViewType">故事</view>
+    <view class="tab-header-item {{show == 'person_favorite' ? 'tab-header-active' : ''}}" data-type="person_favorite" bindtap="changeViewType">人物</view>
+</view>
+
+<view class='litlelooks-wrap' hidden="{{showDelete == 'yes' ? false : true}}"   style='right:20rpx;bottom:20rpx;'>
+      <image class='litlelooks-image' src='./rec.jpg'></image>
+    </view>
+
+    <view class='litlelooks-wrap' hidden="{{showMoveItem == 'yes' ? false : true}}"  bindtouchend='imagetouchend' bindtouchmove="imagetouchmove" style='left:{{leftLooks}}px;top:{{topLooks}}px;'>
+      <image class='litlelooks-image' src="{{moveItemImagePath}}"></image>
+    </view>
+
+<view class="tab-content">
+    <view class="film" hidden="{{show == 'film_favorite' ? false : true}}">
+        <block wx:if="{{film_favorite.length > 0}}">
+            <template is="nullTip" data="{{nullTip: nullTip}}"/>
+        </block>
+
+        <block wx:else>
+            <block wx:for="{{film_favorite2}}" wx:for-item="filmFavoriteItem" wx:for-index="filmFavoriteIndex" wx:key="filmFavorite">
+                <view class="favorite-film-item" data-id="{{filmFavoriteItem.id}}" bindlongpress="mytouchend" bindtouchmove="imagetouchmove2" bindtouchend='itemtouchend' bindtap="viewFilmDetail"  style='order:{{filmFavoriteItem.order}}'>
+
+                <view class="film-cover">
+                    <image class="favorite-film-cover" style='opacity:{{opaNum}}' src="{{filmFavoriteItem.images.large}}"></image>
+                </view>
+                    <view class="favorite-film-info">
+                        <view class="favorite-film-txt favorite-film-title" style='opacity:{{opaNum}}'>{{filmFavoriteItem.title}}</view>
+                    </view>
+                </view>
+            </block>
+            
+
+
+
+            
+        </block>
+    </view>
+
+
+    <view class="tab-content-item" hidden="{{show == 'person_favorite' ? false : true}}">
+        <block wx:if="{{person_favorite.length == 0}}">
+            <template is="nullTip" data="{{nullTip: nullTip}}"/>
+        </block>
+        <block wx:else>
+            <block wx:for="{{person_favorite}}" wx:for-item="personFavoriteItem" wx:for-index="personFavoriteIndex" wx:key="personFavorite">
+                <view class="favorite-person-item" data-id="{{personFavoriteItem.id}}" bindtap="viewPersonDetail">
+                    <view class="favorite-person-intro">
+                        <view class="favorite-person-cover" style="background-image: url({{personFavoriteItem.avatars.medium}})"></view>
+                        <view class="favorite-person-info">
+                            <view class="favorite-person-txt favorite-person-name">{{personFavoriteItem.name}}</view>
+                            <view class="favorite-person-txt">{{personFavoriteItem.name_en}}</view>
+                            <view class="favorite-person-txt">{{personFavoriteItem.born_place}}</view>
+                            <view class="favorite-person-txt favorite-person-works">主要作品：
+                                <block wx:for="{{personFavoriteItem.works}}" wx:for-item="personFavoriteWorkItem" wx:for-index="personFavoriteWorkIndex" wx:key="personFavoriteWorks">
+                                    {{personFavoriteWorkItem.subject.title}}
+                                    <block wx:if="{{personFavoriteWorkIndex !== personFavoriteItem.works.length - 1}}">
+                                        、
+                                    </block>
+                                </block>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </block>
+    </view>
+</view>

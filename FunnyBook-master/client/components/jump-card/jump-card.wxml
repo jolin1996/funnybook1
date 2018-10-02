@@ -1,0 +1,11 @@
+<view wx:if="{{isShow}}" class="card-mask" bindtap="onTapMask" catchtouchmove="preventTouchMove"></view>
+<view wx:if="{{isShow}}" class="card-dialog" style="top:{{topPercent}}%">
+  <view class="card-content">
+      <image class="target-image" wx:if="{{target.image}}" src="{{target.image}}"/>
+      <text class="target-text" wx:if="{{target.text}}">{{target.text}}</text>
+  </view>
+  <view class="card-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onJump" data-status="confirm">查看详情</view>
+  </view>
+</view>

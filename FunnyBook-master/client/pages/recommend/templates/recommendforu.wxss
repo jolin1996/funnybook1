@@ -1,0 +1,33 @@
+.rfu-title {
+  font-size: 40rpx;
+  padding: 5rpx;
+  text-align: left;
+}
+
+.rfu-intro {
+  font-size: 24rpx;
+  padding: 5rpx;
+  text-align: left;
+  color: rgb(170, 166, 166);
+}
+
+.rfu-item {
+  text-align: center;
+}
+
+.rfu-image {
+  margin: 25rpx 35rpx 0 0;
+  width: 250rpx;
+  height: 350rpx;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.rfu-change {
+  font-size: 22rpx;
+  padding: 20rpx;
+  text-align: center;
+  color: rgb(121, 193, 252);
+  margin: 16rpx;
+}

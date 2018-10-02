@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "chat-button": "/components/chat-button/index",
+    "chat-bubble": "/components/chat-bubble/chat-bubble",
+    "record-toast": "/components/record-toast/record-toast",
+    "jump-card": "/components/jump-card/jump-card"
+  }
+}

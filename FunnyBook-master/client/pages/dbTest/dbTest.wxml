@@ -1,0 +1,38 @@
+<!--pages/dbTest/dbTes.wxml-->
+<view class='pages'>
+    <view class="btn-area">
+        <form bindsubmit="dataUpload">
+            <view class="weui-cells__title">姓名</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="nameInput" placeholder="请输入姓名" />
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells__title">年龄</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="ageInput" placeholder="请输入年龄" />
+                    </view>
+                </view>
+            </view>
+            <button class="weui-btn" formType="submit" type="primary">上传数据</button>          
+        </form>
+        <form bindsubmit="dataSearch">
+            <view class="weui-cells__title">id</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="id" placeholder="输入检索的id" />
+                    </view>
+                </view>
+            </view>
+            <button class="weui-btn" formType="submit" type="default">检索数据</button>          
+        </form>
+        <view class="page__desc">姓名：{{name}}</view>
+        <view class="page__desc">性别：{{gender}}</view>
+        <view class="page__desc">年龄：{{age}}</view>
+    </view>
+</view> 

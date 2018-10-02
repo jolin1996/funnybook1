@@ -1,0 +1,52 @@
+<view class='mine'style='background-color:#40586d'>
+  <view class='avtar' >
+		<image src='http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg'></image>
+	</view>
+
+	<view class='data-types'>
+		<view class='type-item'>
+		  <view class='count'>12</view>
+			<view class='title'>枚勋章</view>
+		</view>
+	</view>
+</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ecScatter }}"></ec-canvas>
+</view>
+
+<view class="newest">
+    <view class="newest-title"><text>功勋墙</text></view>
+    <view class="newest-box">
+        <view class="newest-list">
+            <image src="http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg"></image>
+            <view class="newest-text"><text>勋章</text></view>
+            <view class="newest-text"><text>获得日期</text></view>
+        </view>
+        <view class="newest-list">
+            <image src="http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg"></image>
+            <view class="newest-text"><text>勋章</text></view>
+            <view class="newest-text"><text>获得日期</text></view>
+        </view>
+        <view class="newest-list">
+            <image src="http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg"></image>
+            <view class="newest-text"><text>勋章</text></view>
+            <view class="newest-text"><text>获得日期</text></view>
+        </view>
+        <view class="newest-list">
+            <image src="http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg"></image>
+            <view class="newest-text"><text>勋章</text></view>
+            <view class="newest-text"><text>获得日期</text></view>
+        </view>
+        <view class="newest-list">
+            <image src="http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg"></image>
+            <view class="newest-text"><text>勋章</text></view>
+            <view class="newest-text"><text>获得日期</text></view>
+        </view>
+        <view class="newest-list">
+            <image src="http://www.qqzhi.com/uploadpic/2014-05-14/051120936.jpg"></image>
+            <view class="newest-text"><text>勋章</text></view>
+            <view class="newest-text"><text>获得日期</text></view>
+        </view>
+    </view>
+</view>

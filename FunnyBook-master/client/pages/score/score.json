@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的积分",
+  "usingComponents": {
+    "wux-card": "../../dist/card/index",
+    "wux-wing-blank": "../../dist/wing-blank/index",
+    "ec-canvas": "../../util/ec-canvas/ec-canvas"
+  }
+}

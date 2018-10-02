@@ -1,0 +1,35 @@
+<block wx:if="{{! showLoading}}">
+<view class="search-bar">
+    <input class="search-txt" placeholder-class="search-txt-plc" bindfocus="viewSearch" placeholder="请输入关键词搜索" type="text"/>
+</view>
+<swiper class="banner" indicator-dots="true" autoplay="true">
+    <block wx:for="{{bannerList}}" wx:for-item="bannerItem" wx:for-index="bannerIndex" wx:key="banner">
+        <swiper-item data-type="{{bannerItem.type}}" data-id="{{bannerItem.id}}" bindtap="viewBannerDetail">
+            <image src="{{bannerItem.imgUrl}}" class="banner-item"></image>
+        </swiper-item>
+    </block>
+</swiper>
+</block>
+
+<view class="board" scroll-y="true">
+    <block wx:for="{{ boards }}" wx:key="key">
+      <view class="board-item">
+        <navigator url="{{item.list}}" hover-class="none">
+          <view class="title">
+            <text>{{ item.title }}</text>
+            <image src="../../dist/images/arrowright.png" mode="aspectFill"/>
+          </view>
+        </navigator>
+        <scroll-view class="content" scroll-x="true">
+          <view class="inner">
+            <navigator wx:for="{{ item.movies }}" wx:key="id" url="../filmDetail/filmDetail?id={{ item.id }}">
+              <view class="movie-item">
+                <image src="{{ item.images.large }}" mode="aspectFill"/>
+                <text>{{ item.title }}</text>
+              </view>
+            </navigator>
+          </view>
+        </scroll-view>
+      </view>
+    </block>
+</view>

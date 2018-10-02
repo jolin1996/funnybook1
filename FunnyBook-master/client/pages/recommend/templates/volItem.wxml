@@ -1,0 +1,27 @@
+<template name="vol-item">
+  <view class="vol-card">
+    <view class="align-center">
+      <!-- 书本封面 -->
+      <image class="vol-picture" src="{{item.hp_img_url}}" mode="aspectFill"></image>
+      <!-- 书名 -->
+      <view class="vol-title">
+        <text>{{item.hp_title}}</text>
+      </view>
+      <!-- 作者 -->
+      <view class="vol-author">
+        <text>{{item.hp_author}}</text>
+      </view>
+      <!-- <view class="vol-content">
+        <text class="vol-content-text">{{item.hp_content}}</text>
+      </view> -->
+      <view class="vol-reader">
+        <!-- 头像 -->
+        <image class="vol-reader-image" src="{{item.hp_img_url}}" mode="aspectFill"></image>
+        <!-- 好友在读 -->
+        <view>
+          <text class="vol-reader-name">{{item.hp_makettime}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

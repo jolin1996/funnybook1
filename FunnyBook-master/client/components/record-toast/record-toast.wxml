@@ -1,0 +1,3 @@
+<view class="wrapper">  
+  <image class="content" src="../../dist/record-toast/speaker1.gif"/>
+</view> 

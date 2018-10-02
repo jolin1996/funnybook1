@@ -1,0 +1,40 @@
+.frd-title {
+  font-size: 20px;
+  padding: 5rpx;
+  text-align: left;
+}
+
+.frd-item {
+  text-align: left;
+  background-color: #f5f4f4;
+  border: 10rpx solid #f5f4f4;
+  border-radius: 10rpx;
+  height: 240rpx;
+  margin: 20rpx 0 0 0;
+}
+
+.frd-image {
+  margin: 22rpx;
+  width: 140rpx;
+  height: 196rpx;
+  display: inline-block;
+  overflow: hidden;
+  /* border-radius: 3px; */
+}
+
+.frd-booktitle {
+  font-size: 32rpx;
+  padding: 10rpx;
+  position: relative;
+  bottom: 210rpx;
+  left: 200rpx;
+}
+
+.frd-author {
+  font-size: 24rpx;
+  padding: 5rpx;
+  position: relative;
+  bottom: 210rpx;
+  left: 200rpx;
+  color: #888;
+}

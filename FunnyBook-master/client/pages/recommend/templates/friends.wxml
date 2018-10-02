@@ -1,0 +1,38 @@
+<template name="vol-friend">
+  <view class="vol-card">
+    <view class="frd-title">
+      <text>好友在读</text>
+    </view>
+
+    <view class="frd-item">
+      <image class="frd-image" src="{{ item[0].hp_img_url }}" mode="aspectFill" />
+      <view class="frd-booktitle">
+        <text>{{item[0].hp_title}}</text>
+      </view>
+      <view class="frd-author">
+        <text>{{item[0].hp_author}}</text>
+      </view>
+    </view>
+
+    <view class="frd-item">
+      <image class="frd-image" src="{{ item[1].hp_img_url }}" mode="aspectFill" />
+      <view class="frd-booktitle">
+        <text>{{item[1].hp_title}}</text>
+      </view>
+      <view class="frd-author">
+        <text>{{item[1].hp_author}}</text>
+      </view>
+    </view>
+
+    <view class="frd-item">
+      <image class="frd-image" src="{{ item[2].hp_img_url }}" mode="aspectFill" />
+      <view class="frd-booktitle">
+        <text>{{item[2].hp_title}}</text>
+      </view>
+      <view class="frd-author">
+        <text>{{item[2].hp_author}}</text>
+      </view>
+    </view>
+
+  </view>
+</template>

@@ -1,0 +1,33 @@
+<template name="vol-rec1">
+  <!--data:title标题,subtitle副标题,books书列表(6本)-->
+  <view class="vol-card">
+    <view class="rec1-title">{{title}}</view>
+    <view class="rec1-subtitle">{{subtitle}}</view>
+    <view class="rec1-book-list">
+      <block wx:for="{{books}}" wx:for-item="book" wx:for-index="bookIndex" wx:key="{{bookID}}">
+        <view class="rec1-book-info">
+          <image class="rec1-book-cover" src="{{book.cover}}"></image>
+          <block wx:if="{{book.title.length<=6}}">
+            <view class="rec1-book-title">{{book.title}}</view>
+          </block>
+          <block wx:else> <!--标题长度超过6个字-->
+            <view class="rec1-book-title">{{book.title[0]+book.title[1]+book.title[2]+book.title[3]+book.title[4]}}...</view> <!--显示前5个字+...-->
+          </block>
+          <view class="rec1-book-icon" data-id="{{book.bookID}}" bindtap="viewBookDetail">获取</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</template>
+
+<!--
+templete里事件函数的封装目前还不0K
+需在引用页面对应的.js的Page()里写viewBookDetail函数
+例:
+viewBookDetail: function(e) {
+  var data = e.currentTarget.dataset
+  wx.navigateTo({
+    url: "../bookDetail/bookDetail?id=" + data.id
+  })
+}
+-->

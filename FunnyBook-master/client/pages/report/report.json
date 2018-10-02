@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "阅读报告",
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#40586d",
+  "usingComponents": {
+    "ec-canvas": "../../util/ec-canvas/ec-canvas"
+  }
+}

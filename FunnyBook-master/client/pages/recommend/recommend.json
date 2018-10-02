@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "图书推荐",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#f8f9fb",
+  "backgroundTextStyle": "dark"
+}

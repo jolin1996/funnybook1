@@ -1,0 +1,46 @@
+@import '../../component/nullTip/nullTip.wxss';
+
+page {  
+  background-color: #f8f9fb;
+}
+
+.kids-list {
+  display: flex;
+  flex-direction: column;
+  padding: 35rpx;
+}
+
+.kid-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 5rpx 10rpx #f2f2f2
+}
+
+.kid-picture {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx
+}
+
+.kid-txt {
+  width: 390rpx;
+  margin-left: 50rpx;
+}
+
+.kid-name {
+  font-size: 40rpx;
+  color: #666;
+}
+
+.kid-age {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  color: #999;
+}

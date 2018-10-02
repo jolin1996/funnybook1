@@ -1,0 +1,83 @@
+.kid-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding: 25rpx 50rpx 25rpx 50rpx;
+  background-color: #40586d;
+}
+
+.kid-picture {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx
+}
+
+.kid-txt {
+  width: 440rpx;
+  margin-left: 50rpx;
+}
+
+.kid-name {
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.kid-age {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.kid-info2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding: 25rpx 50rpx 40rpx 50rpx;
+  background-color: #40586d;
+}
+
+.info2-item {
+  width: 215rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.number {
+  font-size: 36rpx;
+  color: #fff
+}
+
+.unit {
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  color: #fff
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center
+}
+
+.graph-card {
+  box-sizing: border-box;
+  width: 720rpx;
+  padding: 40rpx 30rpx 50rpx 30rpx;
+  border-bottom: 1px solid #ccc
+}
+
+.graph-title {
+  font-size: 36rpx;
+  margin-bottom: 10rpx
+}
+
+#radar, #pie, #line, #bar {
+  width: 650rpx;
+  height: 550rpx;
+  display: block
+}

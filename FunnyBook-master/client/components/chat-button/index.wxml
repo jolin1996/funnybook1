@@ -1,0 +1,3 @@
+<view class="button-container" catchtouchstart="touchStart" catchtouchend="touchEnd" >
+  <image class="button-background" src="{{backgrounds[status]}}"></image>
+</view>

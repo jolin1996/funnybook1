@@ -1,0 +1,41 @@
+<view class="kid-info">
+  <image class="kid-picture" src="{{kid.picture}}"></image>
+  <view class="kid-txt">
+    <view class="kid-name">{{id}} {{kid.name}} {{kid.sex == 0 ? "♀" : "♂"}}</view>
+    <view class="kid-age">{{kid.age}}岁</view>
+  </view>
+</view>
+
+<view class="kid-info2">
+  <view class="info2-item">
+    <view class="number">{{kid.time}}</view>
+    <view class="unit">分钟</view>
+  </view>
+  <view class="info2-item">
+    <view class="number">{{kid.acc}}</view>
+    <view class="unit">本书</view>
+  </view>
+  <view class="info2-item">
+    <view class="number">{{kid.points}}</view>
+    <view class="unit">积分</view>
+  </view>
+</view>
+
+<view class="graph-container">
+  <view class="graph-card">
+    <view class="graph-title">阅读时间</view>
+    <ec-canvas id="line" canvas-id="line" ec="{{ecLine}}"></ec-canvas>
+  </view>
+  <view class="graph-card">
+    <view class="graph-title">跟上面一样</view>
+    <ec-canvas id="bar" canvas-id="bar" ec="{{ecBar}}"></ec-canvas>
+  </view>
+  <view class="graph-card">
+    <view class="graph-title">阅读分类</view>
+    <ec-canvas id="pie" canvas-id="pie" ec="{{ecPie}}"></ec-canvas>
+  </view>
+  <view class="graph-card">
+    <view class="graph-title">能力分布</view>
+    <ec-canvas id="radar" canvas-id="radar" ec="{{ecRadar}}"></ec-canvas>
+  </view>
+</view>

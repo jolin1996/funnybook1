@@ -1,0 +1,19 @@
+.button-container {
+  display: flex;
+  height: 80rpx;
+  width: 160rpx;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  border-radius: 80rpx;
+  border-width: 0;
+  border-color: pink;
+  border-style: solid;
+  box-shadow: 3rpx 3rpx 3rpx 3rpx #888888
+}
+
+.button-background {
+  height: 100%;
+  width: 100%;
+}
+
